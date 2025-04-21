@@ -45,7 +45,7 @@ def executeFL():
         results[round_num] = (avg_loss, avg_accuracy)  # Lưu kết quả vào dictionary
         print(f'    --END train at Round {round_num + 1}/{pr.num_rounds}--')
     print("----------------------End training ------------------------------------")
-    ld.saveResultsToFile(results, pr.results_file_path + 'results.txt')
+    ld.saveResultsToFile(results, pr.results_file_path + '/results.txt')
 
 
 if __name__ == '__main__':
